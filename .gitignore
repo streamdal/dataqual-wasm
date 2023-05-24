@@ -1,0 +1,3 @@
+*.wasm
+.idea
+.DS_Store
