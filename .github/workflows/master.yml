@@ -21,7 +21,7 @@ jobs:
         run: |
           make build
       - name: Compress directory
-        run: zip -r release.zip build/*.wasm
+        run: zip -j release.zip build/*.wasm
 
       - name: Create artifact
         uses: actions/upload-artifact@v2
