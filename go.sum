@@ -6,8 +6,8 @@ github.com/josharian/intern v1.0.0 h1:vlS4z54oSdjm0bgjRigI+G1HpF+tI+9rE5LLzOg8Hm
 github.com/josharian/intern v1.0.0/go.mod h1:5DoeVV0s6jJacbCEi61lwdGj/aVlrQvzHFFd8Hwg//Y=
 github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
 github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
-github.com/streamdal/dataqual v0.0.1 h1:t7dJsIJRXWAH0HoWRaL8DtnezTh5YRxe03qz5A3ctIQ=
-github.com/streamdal/dataqual v0.0.1/go.mod h1:deCIpb8NxopoFyDf26sP7//FP8D83eYk83tNVXBgJ4E=
+github.com/streamdal/dataqual v0.0.13 h1:y5pxfVYIVzajTnrmosrY8HxzmcBex2WK6b4yJssjV8Q=
+github.com/streamdal/dataqual v0.0.13/go.mod h1:eU5BOGx8SZxaCjfh96rYzyD9BSJH/yU7NhlAiDZu7aM=
 github.com/streamdal/pii v0.0.3 h1:JmWatbLdWLqnW2EnJiFVico+wG93wKJcVwwBvFQfdSU=
 github.com/streamdal/pii v0.0.3/go.mod h1:8VCf2un/Db78rFA+PAR65uRTT9ZOD5inbySA1Xgy7Bc=
 github.com/tidwall/gjson v1.14.1 h1:iymTbGkQBhveq21bEvAQ81I0LEBork8BFe1CUZXdyuo=

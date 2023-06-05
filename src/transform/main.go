@@ -35,6 +35,10 @@ func f(ptr int32, length int32) int32 {
 		return common.ReturnTransformResponse(data, err)
 	}
 
+	if req.Delete {
+		return common.ReturnTransformResponse(jsonparser.Delete(req.Data, req.Path), nil)
+	}
+
 	modified, err := jsonparser.Set(req.Data, []byte(req.Value), req.Path)
 	if err != nil {
 		err = errors.Wrap(err, "failed to run jsonparser.Set")
