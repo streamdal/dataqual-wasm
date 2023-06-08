@@ -173,7 +173,7 @@ func (m MockPlumberServer) GetRuleSets(ctx context.Context, request *protos.GetD
 		RuleSets: []*common.RuleSet{
 			{
 				Name: "kafka publish rules",
-				Key:  "dqtest1",
+				Key:  KafkaTopic,
 				Bus:  "kafka",
 				Mode: common.RuleMode_RULE_MODE_PUBLISH,
 				Rules: map[string]*common.Rule{
@@ -194,7 +194,7 @@ func (m MockPlumberServer) GetRuleSets(ctx context.Context, request *protos.GetD
 			},
 			{
 				Name: "kafka consume rules",
-				Key:  "dqtest1",
+				Key:  KafkaTopic,
 				Bus:  "kafka",
 				Mode: common.RuleMode_RULE_MODE_CONSUME,
 				Rules: map[string]*common.Rule{

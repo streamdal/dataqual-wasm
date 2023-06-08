@@ -9,6 +9,12 @@ import (
 	amqp "github.com/streamdal/rabbitmq-amqp091-go"
 )
 
+const (
+	AmqpExchange   = "dqtest"
+	AmqpRoutingKey = "dqtest"
+	AmqpQueue      = "dqtest"
+)
+
 type Rabbit struct {
 	Channel    *amqp.Channel
 	Connection *amqp.Connection
