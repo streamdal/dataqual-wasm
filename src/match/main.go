@@ -17,7 +17,6 @@ func main() {}
 
 //export f
 func f(ptr int32, length int32) int32 {
-
 	data := make([]byte, 0, length)
 
 	// Use a for loop to read each byte and append result into data
