@@ -14,6 +14,7 @@ help:
 .PHONY: build
 build: description = Build everything
 build:
+
 	tinygo build -o build/match.wasm -scheduler=none -target wasi src/match/main.go
 	tinygo build -o build/transform.wasm -scheduler=none -target wasi src/transform/main.go
 
@@ -23,3 +24,7 @@ setup/darwin: description = Install toolkit for building on macOS M1
 setup/darwin:
 	brew tap tinygo-org/tools && brew install tinygo wasmtime
 
+.PHONY: test/fakes
+test/fakes: description = Generate test mocks
+test/fakes:
+	go run github.com/maxbrunsfeld/counterfeiter/v6 -o tools/fake_plumber github.com/streamdal/dataqual.IPlumberClient
