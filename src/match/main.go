@@ -5,9 +5,8 @@ import (
 	"runtime"
 	"unsafe"
 
-	"github.com/pkg/errors"
-
 	"github.com/buger/jsonparser"
+	"github.com/pkg/errors"
 	"github.com/streamdal/dataqual/common"
 	"github.com/streamdal/dataqual/detective"
 )
