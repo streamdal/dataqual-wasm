@@ -14,8 +14,8 @@ help:
 .PHONY: build
 build: description = Build everything
 build:
-	tinygo build -o build/match.wasm -scheduler=none -target wasi src/match/main.go
-	tinygo build -o build/transform.wasm -scheduler=none -target wasi src/transform/main.go
+	tinygo build -o build/match.wasm -no-debug -scheduler=none -target wasi src/match/main.go
+	tinygo build -o build/transform.wasm -no-debug -scheduler=none -target wasi src/transform/main.go
 
 
 .PHONY: setup/darwin
