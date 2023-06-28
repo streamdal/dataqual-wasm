@@ -41,7 +41,12 @@ func f(ptr int32, length int32) int32 {
 		return common.ReturnMatchResponse(false, err)
 	}
 
-	matched, err := detective.NewMatcher().Match(field, t, req.MatchType, req.Args...)
+	// Default to IsMatch if no match operator is specified
+	if req.MatchOperator == "" {
+		req.MatchOperator = detective.IsMatch
+	}
+
+	matched, err := detective.NewMatcher().Match(field, t, req.MatchType, req.MatchOperator, req.Args...)
 	if err != nil {
 		err = errors.Wrap(err, "unable to match field")
 		return common.ReturnMatchResponse(false, err)
