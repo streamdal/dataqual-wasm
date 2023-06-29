@@ -8,7 +8,7 @@ import (
 	"github.com/pkg/errors"
 
 	"github.com/buger/jsonparser"
-	"github.com/streamdal/dataqual/common"
+	"github.com/streamdal/snitch-go-client/common"
 )
 
 // Tiny-go needs a main function to compile`

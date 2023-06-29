@@ -5,7 +5,6 @@ go 1.20
 require (
 	github.com/buger/jsonparser v1.1.1
 	github.com/pkg/errors v0.9.1
-	github.com/streamdal/dataqual v0.0.22
 	github.com/streamdal/snitch-go-client v0.0.24
 )
 
